@@ -1,5 +1,3 @@
-# Online-Code-Snippet-Manager
-
 # 🌤️ WeatherVerse - AI-Powered Weather App
 
 A stunning weather application with real-time global weather data and AI-powered insights.
