@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVerse - AI Weather Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">WEATHERVERSE</div>
+            <div class="tagline">AI-Powered Weather Intelligence</div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="cityInput" placeholder="Explore weather in any city worldwide...">
+                <button class="btn" onclick="getWeather()">Search</button>
+                <button class="btn btn-icon" onclick="getCurrentLocation()">📍</button>
+            </div>
+        </div>
+
+        <div id="error" class="error" style="display:none;"></div>
+
+        <div class="weather-grid">
+            <div id="mainWeather" class="card main-weather-card" style="display:none;">
+                <div class="weather-info">
+                    <div class="city-name" id="cityName">Loading...</div>
+                    <div class="weather-condition" id="weatherDesc">--</div>
+                    <div class="temperature-display" id="temperature">--°</div>
+                </div>
+                <div class="weather-visual">
+                    <div class="weather-icon-large" id="weatherIcon">☀️</div>
+                </div>
+            </div>
+
+            <div id="statsCard" class="card" style="display:none;">
+                <div class="stats-grid" id="statsGrid"></div>
+            </div>
+
+            <div class="card ai-card">
+                <div class="ai-header">
+                    <div class="ai-icon">🤖</div>
+                    <div class="ai-title">AI Weather Assistant</div>
+                </div>
+                <div id="aiInsights" class="ai-content">
+                    Search for any location to receive personalized weather insights, recommendations, and smart tips powered by advanced AI...
+                </div>
+            </div>
+
+            <div class="card timeline-card">
+                <div class="timeline-header">
+                    <span>⏰</span>
+                    <span>5-Day Weather Journey</span>
+                </div>
+                <div id="timeline" class="forecast-scroll">
+                    <div style="color: #8b9dc3; padding: 20px;">Search a location to view the forecast timeline...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
